@@ -1,0 +1,175 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Default text color */
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    background: rgba(37, 37, 59, 0.9); /* Dark purple */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    border-style: solid;
+    border-color: #8e44ad; /* Lighter purple */
+    border-width: 3px;
+}
+
+
+/* Back button container styling */
+.back-button-container {
+    display: flex; /* Use flex for alignment */
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    background-color: rgba(142, 68, 173, 0.7); /* Background color */
+    border: 2px solid #8e44ad; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    animation: bounce 1s infinite; /* Animation */
+    
+}
+
+.back-button-container {
+    margin-right: 140px; /* Push the back button to the left */
+}
+
+/* Back button hover effect */
+.back-button:hover {
+    background-color: #9b59b6; /* Light purple on hover */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up */
+    }
+}
+
+/* Navbar links styling */
+.nav-links {
+    display: flex; /* Use flex for links */
+    align-items: center; /* Center links vertically */
+}
+
+#navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    position: relative;
+    padding: 8px 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Professional hover effect with a subtle neon underline */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: linear-gradient(to right, #8e44ad, #9b59b6); /* Gradient effect */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.nav-link:hover {
+    color: #9b59b6; /* Light purple */
+}
+
+/* Name box styling */
+.name-box {
+    background-color: rgba(142, 68, 173, 0.1); /* Semi-transparent background */
+    color: #9b59b6; /* Light purple text */
+    padding: 10px 15px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-left: 100px; /* Push the name box to the right */
+}
+
+.name-box i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 20px; /* Adjust icon size */
+    color: #9b59b6; /* Match icon color with text color */
+}
+
+/* Main content styling */
+.section {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+/* Heading styles */
+.main-heading {
+    font-size: 42px;
+    color: #9b59b6; /* Light purple */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    font-size: 22px;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+}
+
+/* Section headings */
+.section-heading {
+    font-size: 32px;
+    color: #9b59b6; /* Light purple */
+    border-bottom: 2px solid #8e44ad; /* Darker purple */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Achievements list styling */
+.achievement-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievement-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+/* Education section styling */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background */
+    border: 1px}

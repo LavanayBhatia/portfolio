@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #010000; /* Dark background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0%;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('standard\ \(2\).gif') no-repeat center center fixed; /* Set the GIF as background */
+    background-size: cover; /* Cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.back {
+    position: relative;
+    height: 400px; /* Height for layout */
+    width: 300px; /* Width for content */
+    background-color: #1c1c1c; /* Darker gray background for better contrast */
+    border: 2px solid #5c4b8a; /* Subtle purple border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(184, 182, 182, 0.25); /* Softer shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space */
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+.back:hover {
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    background: linear-gradient(45deg, #5e2b91, #a55eb5); /* Gradient on hover */
+}
+
+.glow::before, .glow::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(128, 0, 128, 0.05));
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px); /* Less blur for subtlety */
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff; /* White for headings */
+    font-size: 24px; /* Adjusted size */
+    margin-bottom: 5px; /* Less margin for compactness */
+}
+
+h3 {
+    color: #eeeeee; /* Light gray for subtitles */
+    margin-bottom: 5px; /* Less margin for compactness */
+}
+
+
+.school-name {
+    font-weight: normal; /* Make the school name not bold */
+    color: #84828e; /* Dark purple color for the school name */
+    font-size: 20px; /* Adjust size if needed */
+}
+
+
+
+.designation {
+    font-size: 14px;
+    font-style: italic;
+    color: #cccccc; /* Muted gray for distinction */
+}
+
+.button-container {
+    width: 100%; /* Full width for alignment */
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px; /* Space between name and buttons */
+}
+
+.link {
+    background-color: #5c4b8a; /* Purple button */
+    color: white; /* White text */
+    width: 120px; /* Fixed width */
+    font-size: 16px; /* Text size */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for click area */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between buttons */
+}
+
+
+
+.link a {
+    color: white; /* Ensure link text is white */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    background-color: #4a3b6e; /* Darker purple on hover */
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 600% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

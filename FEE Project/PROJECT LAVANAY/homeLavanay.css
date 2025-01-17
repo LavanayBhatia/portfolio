@@ -1,0 +1,326 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    cursor: url("starter-northern-lights-cursor-modified.png"), auto;
+}
+
+* a {
+    cursor: url("starter-northern-lights-pointer.png"), auto;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: url(standard\ \(2\).gif);
+}
+
+.back-button-container {
+    display: flex;
+    /* Use flex for alignment */
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    background-color: rgba(22, 19, 26, 0.7);
+    /* Background color */
+    border: 2px solid #532196;
+    /* Border color */
+    border-radius: 32px;
+    /* Rounded corners */
+    padding: 3vh 2vw;
+    /* Padding */
+    text-decoration: none;
+    /* Remove underline */
+    color: rgb(230, 224, 224);
+    /* Text color */
+    font-size: 20px;
+    /* Font size */
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+    /* animation: bounce 1s infinite; Animation */
+    position: relative;
+    top: 82vh;
+    left: 82vw;
+    font-family: fonts;
+}
+
+.back-button-container {
+    margin-right: 140px;
+    /* Push the back button to the left */
+}
+
+/* Back button hover effect */
+.back-button:hover {
+    background-color: #613498;
+    /* Light purple on hover */
+}
+
+
+/* Bounce animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Original position */
+    }
+
+    50% {
+        transform: translateY(-5px);
+        /* Move up */
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+}
+
+.video-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(EdsMarketRegularSlant.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(Hacked-KerX.ttf);
+}
+
+@font-face {
+    font-family: fonts1;
+    src: url(PastiOblique-7B0wK.otf);
+}
+
+@font-face {
+    font-family: fonts2;
+    src: url(FunkyCoffee-E4XYg.otf);
+}
+
+
+.content {
+    height: 100%;
+    width: 100%;
+    animation: blurEffect 2s linear;
+}
+
+
+.name {
+    position: absolute;
+    color: #ffffff;
+    top: 5vh;
+    left: 8vw;
+    font-size: 40px;
+    font-family: myfont;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 4%;
+    left: 45%;
+    width: 50%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    font-family: fonts;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 32px;
+    color: #ffffff;
+    animation: blureffect2 2s linear;
+}
+
+.photo {
+    position: absolute;
+    top: 14vh;
+    left: 35vw;
+    height: 64vh;
+    width: 58vw;
+    transition: transform 0.7s ease-in-out;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+/* .photo1{
+    position: relative;
+    top: 11vh;
+    left: 51vw;
+    height: 66vh;
+    width: 33vw;
+    overflow: hidden;
+}
+.photo1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.photo1:hover{
+    transition:transform  0.3s ease-in-out;
+    transform:scale(1.2)
+} */
+
+
+.text {
+    position: absolute;
+    color: #ffffff;
+    top: 27vh;
+    left: 10vw;
+    font-family: fonts2;
+    font-size: 22px;
+}
+
+.text h1 {
+    padding: 3px;
+    color: #7300ff;
+}
+
+.social-media {
+    position: absolute;
+    left: 9vw;
+    top: 55vh;
+    height: 100px;
+    cursor: url("starter-northern-lights-pointer.png"), auto;
+}
+
+.social-media a {
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 67px;
+    color: #7300ff;
+    transition: transform 0.2s ease;
+    cursor: url("starter-northern-lights-pointer.png"), auto;
+}
+
+.social-media i {
+    cursor: url("starter-northern-lights-pointer.png"), auto;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    cursor: url("starter-northern-lights-pointer.png"), auto;
+}
+
+
+/* Mail button */
+.mail {
+    position: absolute;
+    display: flex;
+    left: 16vw;
+    top: 58vh;
+    border-radius: 5.2px;
+    background-color: #7300ff;
+    /* Dark purple background */
+    transition: transform 0.2s ease;
+    padding: 0;
+    /* Ensure no padding */
+    height: auto;
+    /* Let the height adjust based on content */
+    width: auto;
+    /* Let the width adjust based on content */
+    box-shadow: none;
+    /* Remove shadow if it's making the background look larger */
+}
+
+/* Mail link inside the button */
+.mail a {
+    padding: 0px 4px;
+    font-size: 42px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover effect */
+.mail:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes blurEffect {
+
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurEffect2 {
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 8px;
+    right: 0;
+    background: linear-gradient(90deg, rgba(111, 30, 224, 1) 11%, rgba(155, 124, 181, 1) 94%);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar a:hover {
+    color: #7300ff;
+}
